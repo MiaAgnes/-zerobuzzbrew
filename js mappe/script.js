@@ -7,6 +7,7 @@ let listCard=document.querySelector('.listCard');
 let body=document.querySelector('body');
 let total=document.querySelector('.total');
 let quantity=document.querySelector('.quantity');
+
 openSopping.addEventListener('click', ()=>{
 body.classList.add('active');
 });
@@ -99,7 +100,7 @@ function updateCart() {
 			listCard.appendChild(newDiv);
 	});
 
-	total.innerText = $${totalPrice.toLocaleString()};
+	total.innerText = totalPrice.toLocaleString();
 	quantity.innerText = totalQuantity;
 }
 
