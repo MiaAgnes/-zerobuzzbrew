@@ -4,3 +4,77 @@
 	box-sizing: border-box;
 }
 
+nav{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #8ac9d9;
+	font-family: adelle sans devanagari;
+	height: 8rem;
+	width: 100vw;
+	flex-direction: row;
+}
+
+nav img{
+	display: flex;
+	align-items: center;
+	height: 5rem;
+}
+
+#logo{
+	height: 6rem;
+}
+
+#kurv{
+	margin-right: 3rem;
+}
+
+.nav-links{
+	display: flex;
+	width: 100vw;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 8rem;
+}
+
+.nav-links a{
+	text-decoration: none;
+	font-size: 2rem;
+	color: #2c3583;
+}
+
+li{
+	list-style: none;
+}
+
+/* ↓↓ dropdown meny ↓↓*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+}
+
+/* boksen links ligger i, i dropdownbaren */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 14vw;
+    background-color: #8ac9d9;
+    font-size: 2.2vh;
+}
+
+/* Links i dropdownbaren */
+.dropdown-content a {
+    margin: 2.2vh 0; 
+    color: #2c3583;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.4vh;
+	margin-left: 1rem;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+
