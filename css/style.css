@@ -230,19 +230,4 @@ button:hover{
 
 }
 
-/* nav style */
-/* .navMain{
-	height: 3rem;
-border: 1px solid red;
-
-} */
-/* .navUl{	
-    display: flex;
-    flex-wrap: wrap;  *//* Allows items to wrap onto the next row */
-    /* justify-content: space-between; */ /* Distributes items evenly */
- /*    gap: 20px */; /* Adds spacing between items */
-/* } */
-/* .navList{
-	list-style: none;
-} */
 
