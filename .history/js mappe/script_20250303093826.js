@@ -1,55 +1,52 @@
+"use strict"
+
 let openSopping=document.querySelector('.shopping');
-/* let closeShopping=document.querySelector('.closeShopping'); */
-let list=document.querySelector('.product-list');
+let closeShopping=document.querySelector('.closeShopping');
+let list=document.querySelector('.list');
 let listCard=document.querySelector('.listCard');
-/* let body=document.querySelector('body'); */
+let body=document.querySelector('body');
 let total=document.querySelector('.total');
 let quantity=document.querySelector('.quantity');
+
 openSopping.addEventListener('click', ()=>{
 body.classList.add('active');
 });
-/* closeShopping.addEventListener('click', ()=>{
+closeShopping.addEventListener('click', ()=>{
 	container.classList.remove('active');
-}) */
-/* let products=[
+})
+let products=[
 	{
 		id:1,
-		name:'WEISSBIER',
-		image:'img/GetAttachmentThumbnail.png',
+		name:'PRODUCT NAME 1',
+		image:'./img/GetAttachmentThumbnail.png',
 		price:30
 	},
 	{
-		id:2,
-		name:'STOUT',
-		image:'img/image006.png',
+		id:1,
+		name:'PRODUCT NAME 1',
+		image:'img/image002.png',
 		price:30
 	},
 	{
-		id:3,
-		name:'SOUR',
-		image:'/img/image005.png',
+		id:1,
+		name:'PRODUCT NAME 1',
+		image:'./img/image003.png',
 		price:30
 	},
 	{
-		id:4,
-		name:'LAGER',
-	 	image:'/img/image004.png', 
+		id:1,
+		name:'PRODUCT NAME 1',
+	 	image:'img/image004.png', 
 		price:30
 	},
 	{
-		id:5,
-		name:'IPA',
-		image:'/img/thumbnail_image001.png', 
+		id:1,
+		name:'PRODUCT NAME 1',
+		image:'img/image005.png', 
 		price:30
 	},
-	{
-		id:6,
-		name:'PILSNER',
-		image:'img/image002.png', 
-		price:30
-	},
-]; */
-let listCards=[];//all products  objects are now in listCards
+];
+let listCards=[];
 function initApp() {
 	products.forEach((value, key) => {
 			let newDiv = document.createElement('div');
@@ -57,7 +54,7 @@ function initApp() {
 			newDiv.innerHTML = `
 					<img src="${value.image}" alt="${value.name}">
 					<div class="title">${value.name}</div>
-					<div class="price">kr ${value.price.toLocaleString()}</div>
+					<div class="price">$${value.price.toLocaleString()}</div>
 					<button onclick="addToCart(${key})">Add to Cart</button>
 			`;
 			list.appendChild(newDiv);
@@ -93,7 +90,7 @@ function updateCart() {
 			newDiv.innerHTML = `
 					<img src="${item.image}" alt="${item.name}">
 					<div class="title">${item.name}</div>
-					<div class="price">Kr ${item.price.toLocaleString()}</div>
+					<div class="price">$${item.price.toLocaleString()}</div>
 					<div class="quantity">
 							<button onclick="changeQuantity(${index}, -1)">-</button>
 							${item.quantity}
@@ -103,7 +100,7 @@ function updateCart() {
 			listCard.appendChild(newDiv);
 	});
 
-	total.innerText = `${totalPrice.toLocaleString()}`;
+	total.innerText = totalPrice.toLocaleString();
 	quantity.innerText = totalQuantity;
 }
 
@@ -118,3 +115,4 @@ function changeQuantity(index, change) {
 
 initApp();
 //https://www.youtube.com/watch?v=bCTd1eRX7Iw
+item.id

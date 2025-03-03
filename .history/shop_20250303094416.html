@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>add items in cart</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZeroBuzzBrew</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/1b26d86fbc.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+		    <!-- nav-bar -->
+    <nav class="nav-footer-BgC">
+      <ul class="navUl">
+        <li class="navLi">Shop</li>
+        <li class="navLi">Opleve fabrikken<!-- <a href="fabrikken.html"> </a> -->
+         <!--  <ul class="read-more">
+            <li class="clearBreeze">ClearBreeze</li>
+          </ul> -->
+        </li>
+        <li class="navLi">
+          <a href="index.html" class="logo"><img class="logo-img"src="/img/Hjemmeside-logo.svg"
+              alt=""
+          /></a>
+        </li>
+        <li class="navLi">Om os</li>
+        <li class="navLi">Kontakt</li>
+        <li class="navLi">
+          <a href="cart.html" class="cart"><div class="shopping"> 
+						<svg
+						width="30"
+						height="30"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="#2D3284"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round">
+						<circle cx="9" cy="21" r="1"></circle>
+						<circle cx="20" cy="21" r="1"></circle>
+						<path	d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+					</svg><span class="quantity">0</span></div>
+           
+           <!--  <span class="cartCount">0</span> -->
+					 <!-- div class="closeShopping">❌ Close</div> -->
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="hero">
+			<div class="hero-div">
+			<img src="img/480879792_1328030061666495_6920765363315075071_n.jpg" alt="hero-img">
+			<p class="hero-text">
+				Zero Buzz Brew tilbyder alkoholfri øl med fokus på 0,0% og 0,5% alkohol, så du kan nyde en smagfuld øl uden at gå på kompromis. Vi skaber øl, der passer til en aktiv livsstil, hvor du får mere tid til det der betyder noget, samtidig med at du kan finde gode tilbud. Vores øl giver dig mulighed for at leve fuldt ud, uden alkoholen tager overhånd.
+			</p><br>	
+			<h2>Alle øl</h2>
+		</div>
+		<!-- products container -->
+		<!-- <div class="container">
+			
+		<div class="shopping"></div> -->
+		<!-- <div class="shopping">🛒 Open Cart (<span class="quantity">0</span>)</div>
+    <div class="closeShopping">❌ Close</div> -->
+   
+        <div class=" product" style="display: grid; grid-template-columns: repeat(3,1fr); ">
+          <div style="text-align: center;">
+            <img src="img/image002.png" alt="">
+            <h4 >Name</h4>
+            <h3>Details</h3>
+            <button class="add-to-cart" id="1" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
+          </div>
+          <div style="text-align: center;">
+            <img src="img/image002.png" alt="">
+            <h4 >Name</h4>
+            <h3>Details</h3>
+            <button class="add-to-cart" id="2" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
+          </div>
+          <div style="text-align: center;">
+            <img src="img/image002.png" alt="">
+            <h4 >Name</h4>
+            <h3>Details</h3>
+            <button class="add-to-cart" id="3" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
+          </div>
+          <div style="text-align: center;">
+            <img src="img/image002.png" alt="">
+            <h4 >Name</h4>
+            <h3>Details</h3>
+            <button class="add-to-cart" id="4" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
+          </div>
+          <div style="text-align: center;">
+            <img src="img/image002.png" alt="">
+            <h4 >Name</h4>
+            <h3>Details</h3>
+            <button class="add-to-cart" id="5" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
+          </div>
+          <div style="text-align: center;">
+            <img src="img/image002.png" alt="">
+            <h4 >Name</h4>
+            <h3>Details</h3>
+            <button class="add-to-cart" id="6" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
+          </div>
+        </div>
+			<!-- 	<button class="btn-style">Se abonnomenter</button> -->
+       <div class="cart">
+            <h3>Your Cart</h3> 
+            <div class="listCard"></div>
+            <!-- which is the cart container in the UI) -->
+            <!-- <div class="total">Total:0</div> -->
+          </div>
+					</section>
+    <!-- footer -->
+    <footer>
+      <div class="nav-footer-BgC" id="footer-container">
+        <div class="footer-social-media">
+          <i class="fa-brands fa-facebook s-width"></i>
+          <i class="fa-brands fa-square-instagram s-width"></i>
+          <i class="fa-brands fa-youtube s-width"></i>
+        </div>
+        <div class="footer-logo-div">
+          <a href="index.html" class="logo"
+            ><img class="logo-img"src="/img/Hjemmeside-logo.svg" alt="" /></a>
+        </div>
+        <div class="footer-a">         
+            <h>Address: Ølevej 25</h
+            ><br/>
+            <h>CVR: 95743276></h
+            ><br/>
+            <h>Kontakt:<a href=""> +4560708090</a></h><br/>
+            <h>Mail:<a href=""> zerobuzzbrew@gmail.com</a></h>       
+        </div>
+      </div>
+    </footer>
+    <script src="script2.js"></script>
+  <!--  <script src="script.js"></script>  -->
+  </body>
+</html>	
+</body>
+</html>
