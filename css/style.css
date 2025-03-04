@@ -10,8 +10,8 @@ nav{
 	align-items: center;
 	background-color: #8ac9da;
 	font-family: adelle sans devanagari;
-	height: 4rem;
-	width: 100vw;
+	height: 9vw;
+	width: auto;
 	flex-direction: row;
 }
 
@@ -22,11 +22,11 @@ nav img{
 }
 
 #logo{
-	height:v7.5vw;
+	height:7.5vw;
 }
 
 #kurv{
-	margin-right: 3rem;
+	margin-right: 1rem;
 }
 
 .nav-links{
