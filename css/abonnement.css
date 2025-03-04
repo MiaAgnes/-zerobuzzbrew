@@ -113,5 +113,12 @@
 
 .add-to-cart:hover {
     background: #2c3583;
+}
+
+.abn-produkt-tekst:hover{
     color: #8ac9da;
+}
+
+.abn-link{
+    text-decoration: none;
 }
