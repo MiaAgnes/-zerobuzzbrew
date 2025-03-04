@@ -18,11 +18,11 @@ nav{
 nav img{
 	display: flex;
 	align-items: center;
-	height: 3.5rem;
+	height: 7vw;
 }
 
 #logo{
-	height: 3.5rem;
+	height:v7.5vw;
 }
 
 #kurv{
@@ -86,22 +86,25 @@ main{
 }
 
 main p{
-	font-size: 2rem;
+	font-size: 3vh;
+	text-align: center;
 }
 
 .index-tekst{
-	margin-left: 22rem;
-	margin-right: 22rem;
+	margin-left: 20vw;
+	margin-right: 20vw;
 }
 
 .img-container{
 	margin-top: 3rem;
 	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
 }
 
 .forside-img{
-	height: 65vh;
-	width: 100vh;
+	height: auto;
+	width: 60%;
 }
 
 .forside-knap{
