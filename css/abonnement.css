@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.abn-hero-img{
+
+}
+
+.abn-tekst{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.abn-h1{
+    font-size: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
