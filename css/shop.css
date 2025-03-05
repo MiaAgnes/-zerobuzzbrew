@@ -42,7 +42,6 @@
   .shop-img {
       width: 100%;
       height: auto;
-<<<<<<< HEAD
       max-height: 180px;
       object-fit: contain;
   }
@@ -66,7 +65,6 @@
       transition: all 0.3s ease-in-out;
   }
   
-  /* Farvede knapper */
   .weissbier .add-to-cart { 
       border-color: #FFD700; 
       color: #FFD700; 
@@ -120,19 +118,5 @@
       background-color: #32CD32; 
       color: white; 
   }
-  
-=======
-      width: 10rem;
-}
 
-.add-to-cart{
-	background: white;
-	color: #2c3583;
-	padding: 0.2rem 0.3rem;
-	border: 1px solid #2c3583;
-	border-radius: 5px;
-	cursor: pointer;
-	margin-top: -30rem;
-}
 
->>>>>>> a5b780ab1b3261850d301e5adb717059826d7cef
