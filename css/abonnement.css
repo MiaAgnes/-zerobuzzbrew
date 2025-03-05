@@ -10,7 +10,7 @@
 	display: flex;
 	justify-content: center;
     height: auto;
-	width: 50%;
+	width: 45%;
     border: #2c3583 3px solid;
 }
 
@@ -20,12 +20,12 @@
 }
 
 .abn-tekst p{
-	font-size: 3vw;
+	font-size: 2rem;
 	text-align: center;
 }
 
 .abn-h1{
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-weight: normal;
@@ -44,15 +44,15 @@
     border: 3px solid #2c3583; /* Blue border */
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     text-align: center;
     margin-left: 1rem;
     margin-right: 5rem;
 }
 
 .produkt-card img{
-    width: 165px;
+    width: 185px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -66,18 +66,15 @@
 .produkt-pris{
     font-size: 1rem;
     text-decoration: none;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 .add-to-cart{
     background: white;
     color: #2c3583;
     padding: 0.2rem 0.3rem;
-    border: 1px solid #2c3583;
+    border: 2px solid #2c3583;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: -30rem;
 }
 
 .produkt-container2{
@@ -93,15 +90,16 @@
     border: 3px solid #2c3583; /* Blue border */
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     text-align: center;
     margin-left: 1rem;
     margin-right: 5rem;
+    margin-bottom: 1rem;
 }
 
 .produkt-card2 img{
-    width: 225px;
+    width: 250px;
     height: auto;
     display: block;
     margin: 0 auto;
