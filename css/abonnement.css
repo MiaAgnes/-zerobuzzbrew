@@ -5,25 +5,27 @@
 }
 
 .abn-hero-img{
-    height: 40vw;
-    width: 60vw;
-    border: 3px, solid, #2c3583;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+    height: auto;
+	width: 50%;
+    border: #2c3583 3px solid;
 }
 
 .abn-tekst{
-    margin-left: 20rem;
-    margin-right: 20rem;
-    margin-bottom: 2rem;
+	margin-left: 20vw;
+	margin-right: 20vw;
 }
 
 .abn-tekst p{
-    font-size: 2rem;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .abn-h1{
-    font-size: 4rem;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-weight: normal;
@@ -42,42 +44,40 @@
     border: 3px solid #2c3583; /* Blue border */
     padding: 20px;
     border-radius: 10px;
-    width: 500px;
-    height: 500px;
+    width: 220px;
+    height: 220px;
     text-align: center;
-    margin-left: 5rem;
+    margin-left: 1rem;
     margin-right: 5rem;
 }
 
 .produkt-card img{
-    width: 330px;
+    width: 95px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 .produkt{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin: 10px 0;
 }
 
 .produkt-pris{
-    font-size: 2rem;
+    font-size: 1rem;
     text-decoration: none;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.add-to-cart {
-    background: none;
-    border: 3px solid #2c3583;
+.add-to-cart{
+    background: white;
     color: #2c3583;
-    font-weight: bold;
-    padding: 5px 10px;
-    cursor: pointer;
+    padding: 0.2rem 0.3rem;
+    border: 1px solid #2c3583;
     border-radius: 5px;
-    width: 150px;
-    height: 40px;
+    cursor: pointer;
+    margin-top: -30rem;
 }
 
 .produkt-container2{
@@ -86,23 +86,22 @@
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    margin-bottom: 2rem;
 }
 
 
 .produkt-card2{
-    border: 3px solid #2c3583;
+    border: 3px solid #2c3583; /* Blue border */
     padding: 20px;
     border-radius: 10px;
-    width: 500px;
-    height: 500px;
+    width: 220px;
+    height: 220px;
     text-align: center;
-    margin-left: 5rem;
+    margin-left: 1rem;
     margin-right: 5rem;
 }
 
 .produkt-card2 img{
-    width: 430px;
+    width: 130px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -110,7 +109,7 @@
 
 
 .abn-produkt-tekst{
-    font-size: 1.25rem;
+    font-size: 0.8rem;
 }
 
 

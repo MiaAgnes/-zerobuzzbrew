@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Zero Buzz Brew</title>
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/abonnement.css">
+	<link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/abonnement.css">
 </head>
 <body>
 	<header>
@@ -13,44 +13,44 @@
             <ul class="nav-links" id="navLinks">
                 <li class="dropdown">
                     <a href="/html/shop.html">SHOP</a>
-						<ul class="dropdown-content">
-							<li> <a href="/html/shop.html">Alle øl</a> </li>
-							<li> <a href="/html/shop.html">Øl med 0,0%</a></li>
-							<li> <a href="/html/shop.html">Øl med 0,5%</a></li>
-							<li> <a href="/html/abonnement.html">Kasser med abonnement</a></li>
-						</ul>
+                    <ul class="dropdown-content">
+                        <li><a href="/html/shop.html">Alle øl</a></li>
+                        <li><a href="/html/abonnement.html">Abonnement</a></li>
+                    </ul>
                 </li>
                 <li class="dropdown">
                     <a href="/html/oplevfabrikken.html">OPLEV FABRIKKEN</a>
-					<ul class="dropdown-content">
-						<li> <a href="">Ølsmagning og rundvisning</a></li>
-					</ul>
+                    <ul class="dropdown-content">
+                        <li><a href="">Ølsmagning og rundvisning</a></li>
+                    </ul>
                 </li>
-				<a href="../index.html">
-					<img id="logo" class="logo" src="/img/hjemmesidelogo-2.svg" alt="Zero Buzz Brew logo">
-				</a>
+                <a href="../index.html">
+                    <img id="logo" class="logo" src="/img/hjemmesidelogo-2.svg" alt="Zero Buzz Brew logo">
+                </a>
                 <li class="dropdown">
                     <a href="/html/omos.html">OM OS</a>
-					<ul class="dropdown-content">
-						<li> <a href="">Vores historie</a></li>
-						<li> <a href="">Øllets historie</a></li>
-					</ul>
+                    <ul class="dropdown-content">
+                        <li><a href="">Vores historie</a></li>
+                        <li><a href="">Øllets historie</a></li>
+                    </ul>
                 </li>
                 <li class="dropdown">
                     <a href="/html/kontakt.html">KONTAKT</a>
                 </li>
             </ul>
-			<a id="kurv" href="/html/card.html">
-				<img class="kurv" src="/img/shopping-card.svg" alt="Billede af indkøbskurv">
-                <span class="quantity">0</span>
-			</a>
+				<a id="kurv" href="/html/card.html">
+					<img class="kurv" src="/img/shopping-card.svg" alt="Billede af indkøbskurv">
+					<a href="card.html" class="cart"><div class="shopping"> 
+					</svg><span class="quantity">0</span></div>
+				</a>
+            </a>
         </nav>
         <!-- javascript, skal ligge nederst -->
     </header>
 
 
 	<main>
-        <aside>
+        <aside class="img-container">
             <img class="abn-hero-img" src="../img/abonnoment-kasser.avif" alt="to kasser med øl">
         </aside>
         <aside class="abn-tekst">
@@ -60,7 +60,7 @@
         <section class="produkt-container">
             <aside class="produkt-card">
                 <img src="../img/ens-kasse.avif" alt="">
-                <p class="product">6 pack</p>
+                <p class="produkt">6 pack</p>
                 <p class="produkt-pris">200 kr</p>
                 <a class="abn-link" href="">
                     <button class="add-to-cart" data-item-name="6-pack" data-item-price="200">
@@ -68,6 +68,7 @@
                 </a>
             </button>
             </aside>
+
             <aside class="produkt-card">
                 <img src="../img/six-mix-kasse-2.avif" alt="">
                 <p class="produkt">Mixed pack</p>
@@ -82,7 +83,7 @@
             <section class="produkt-container2">
             <aside class="produkt-card2">
                 <img src="../img/12-pack.avif" alt="">
-                <p class="product">2 of each - pack</p>
+                <p class="produkt">2 of each - pack</p>
                 <p class="produkt-pris">450 kr</p>
                 <a class="abn-link" href="">
                     <button class="add-to-cart" data-item-name="12-pack" data-item-price="450">

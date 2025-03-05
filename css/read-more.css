@@ -1,0 +1,125 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+main{
+   font-family: adelle sans devanagari;
+}
+
+.read-more {
+   display: flex;
+   align-items: start;
+   margin-top: 2rem;
+   height: 40vw;
+}
+
+aside div img {
+   height: 40vw;
+   width: auto;
+   border: 2px solid #2c3583;
+   padding: 0 4.5vw;
+   border-radius: 5px;
+}
+
+.text {
+   margin-right: 2vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: start;
+   height: 40vw;
+
+}
+
+aside p {
+   font-size: 1.5vw;
+   line-height: 1.5;
+   text-align: start;
+}
+
+aside div {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.h2 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 40vw;
+}
+
+.btn {
+   display: flex;
+   flex-direction: row;
+   justify-content:flex-start;
+}
+
+aside button {
+   padding: 0.5vh 3vw;
+   margin-right: 2vw;
+   flex-direction: row;
+   color: #2c3583;
+   background-color: #8ac9da;
+   border: none;
+   cursor: pointer;
+}
+
+button.active {
+   background-color: #2c3583;
+   color: #8ac9da;
+}
+
+.buy {
+   align-self: flex-start;
+   color: #2c3583;
+   background-color: white;
+   border: 2px solid #2c3583;
+}
+
+.andre {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-end;
+}
+
+.more {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 11vw; 
+   margin-top: 5vw;
+}
+
+.more p {
+   font-size: 2vw;
+   display: flex;
+   margin-top: -2vh;
+}
+
+section img {
+   height: 20vw;
+   width: auto;
+   border: 2px solid #2c3583;
+   padding: 0 3vw;
+   border-radius: 5px;
+   margin-top: 1.5vw;
+}
+
+.andre{
+   margin-top: 10vh;
+}
+
+.more button{
+   color: #2c3583;
+   background-color: white;
+   border: 2px solid #2c3583;
+   padding: 0.5vh 3vw;
+   flex-direction: row;
+   cursor: pointer;
+}
