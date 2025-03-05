@@ -148,3 +148,29 @@
       transform: scale(1.05);
   }
 
+  .knap{
+      margin-bottom: 4rem;
+      margin-top: 2rem;
+  }
+
+  .abn-knap{
+      background: white;
+      color: #2c3583;
+      padding: 0.2rem 0.3rem;
+      border: 2px solid #2c3583;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  .abn-knap-tekst{
+      font-size: 2rem;
+      font-weight: normal;
+  }
+
+  .abn-knap:hover{
+      background-color: #2c3583;
+  }
+
+  .abn-knap-tekst:hover{
+      color: #8ac9da;
+  }

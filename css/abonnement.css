@@ -60,11 +60,11 @@
 
 .produkt{
     font-size: 1.25rem;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .produkt-pris{
-    font-size: 1rem;
+    font-size: 1.25rem;
     text-decoration: none;
 }
 
@@ -107,7 +107,7 @@
 
 
 .abn-produkt-tekst{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .produkt-card:hover {
