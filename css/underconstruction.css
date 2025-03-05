@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: normal;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.under-construction-img{
+    height: 40vw;
+    width: 80vw;
+    margin-bottom: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack elements initially */
+    align-items: center; /* Center everything */
+}
+
+main a {
+    display: inline-block; /* Ensures links don't take full width */
+    margin: 10px; /* Adds space between buttons */
+}
+
+main a button {
+    display: inline-block; /* Ensures buttons behave properly */
+    padding: 10px 15px;
+    background-color: white;
+    color: #2d3284;
+    border: 2px solid #2d3284;
+    cursor: pointer;
+    margin-bottom: 0.5rem
+}
+
+main a :hover{
+   color: #8ac9da;
+}
+
+main a button:hover{
+   background-color: #2d3284;
+}
