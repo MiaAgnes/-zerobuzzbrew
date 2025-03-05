@@ -13,8 +13,12 @@ div img{
 .cart{
 	position: relative;	
 }
+
 .hero-text{
-	padding:1rem 2rem;
+	font-size: 3vh;
+	text-align: center;
+	margin-left: 10vw;
+	margin-right: 10vw;
 }
 .hero-div h2{
 text-align: center;
@@ -85,8 +89,8 @@ button:hover{
 		
 	} 
 	.hero-img{
-		height: 22rem;
-    width: 44rem;
+	height: auto;
+	width: 60%;
 	}
 	.hero-div{
 		width: 63rem;
