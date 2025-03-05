@@ -1,0 +1,30 @@
+.remove-from-cart{
+	background: white;
+	color: #2c3583;
+	padding: 0.2rem 0.3rem;
+	border: 1px solid #2c3583;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: -30rem;
+}
+
+.add-to-cart{
+	background: white;
+	color: #2c3583;
+	padding: 0.2rem 0.3rem;
+	border: 1px solid #2c3583;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: -30rem;
+}
+
+button{
+   margin-top: 10vh;
+	background: white;
+	color: #2c3583;
+	padding: 0.2rem 0.3rem;
+	border: 1px solid #2c3583;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: -30rem;
+}

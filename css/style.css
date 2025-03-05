@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+a{
+	text-decoration: none;
+	font-size: 2vw;
+	color: #2c3583;
+}
+
 nav{
 	display: flex;
 	justify-content: center;
@@ -193,4 +199,14 @@ a:visited {
 
 span{
 	text-decoration: none;
+}
+
+.remove-from-cart{
+	background: white;
+	color: #2c3583;
+	padding: 0.2rem 0.3rem;
+	border: 1px solid #2c3583;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: -30rem;
 }
