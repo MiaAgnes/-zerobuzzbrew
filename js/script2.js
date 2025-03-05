@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateCart() {
     listCard.innerHTML = '';
     totalPrice = 0;
+    totalPriceSpan.innerHTML = ''; // Clear previous content
     cart.forEach((item, index) => {
       const itemElement = document.createElement('div');
       itemElement.innerHTML = `
@@ -58,8 +59,20 @@ document.addEventListener('DOMContentLoaded', function() {
       `;
       listCard.appendChild(itemElement);
       totalPrice += item.price * item.quantity;
+
+      // Append item name and price to totalPriceSpan
+      const itemInfo = document.createElement('div');
+      itemInfo.textContent = `${item.name} - ${item.price} DKK x ${item.quantity}`;
+      totalPriceSpan.appendChild(itemInfo);
     });
-    totalPriceSpan.textContent = totalPrice;
+
+    // Append total price to totalPriceSpan
+    const totalPriceInfo = document.createElement('div');
+    totalPriceInfo.textContent = `Total: ${totalPrice} DKK`;
+    totalPriceSpan.appendChild(totalPriceInfo);
+
+    // Store total price in localStorage
+    localStorage.setItem('totalPrice', totalPrice);
   }
 
   listCard.addEventListener('click', function(event) {
