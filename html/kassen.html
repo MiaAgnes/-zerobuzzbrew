@@ -51,12 +51,12 @@
         <button class="but-kurv"> 
             <a href="card.html"></a> Tilbage til kurv </button>
 <!-- følgesedel-->
-        <p class="følgesedel"> Følgesedel</p> 
+        <h2 class="følgesedel"> Følgesedel</h2> 
         <section class="følgesedel-box">
             <table class="følgesedel-tabel">
                 <tr>
                     <th>Item </th>
-                    <th>specifition</th>
+                    <th>Specifition</th>
                     <th>Antal</th>
                     <th>Pris</th>
                 </tr>
@@ -84,10 +84,22 @@
 
 <!-- oplysnings felter -->
         <section class="dine-oplysninger">
-            <section class="email-boks"> <form action="/submit-kommentar" method="POST"></form>
-            <textarea id="email" name="email" placeholder="Email"
-                rows="2" cols="50">
-             </textarea>
+            <h2>Dine oplysninger</h2>
+            <form id="oplysnin-form"> </form>
+                <label for="email">* Email</label>
+                <input type="text" id="email" placeholder="Email">
+
+                <label for="navn">* Fulde navn</label>
+                <input type="text" id="navn" placeholder="Fulde navn">
+
+                <label for="tel">* Telefon nr.</label>
+                <input type="text" id="tel" placeholder="Telefon nr.">
+
+                <label for="adresse">* Adresse</label>
+                <input type="text" id="adresse" placeholder="Adresse">
+
+                <label for="post">* Postnummer.</label>
+                <input type="text" id="post" placeholder="Postnummer">
             </section>
             <section class="gem-chek">
                 <article class="Gem-knap">Gem oplysnings til senere</article>
