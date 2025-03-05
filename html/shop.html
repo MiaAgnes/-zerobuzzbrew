@@ -40,88 +40,123 @@
                     <a href="/html/kontakt.html">KONTAKT</a>
                 </li>
             </ul>
-				<a id="kurv" href="/html/card.html">
-					<img class="kurv" src="/img/shopping-card.svg" alt="Billede af indkøbskurv">
-					<a href="card.html" class="cart"><div class="shopping"> 
-					</svg><span class="quantity">0</span></div>
-				</a>
-            </a>
+			<a id="kurv" href="/html/card.html">
+				<img class="kurv" src="/img/shopping-card.svg" alt="Billede af indkøbskurv">
+				<a href="card.html" class="cart"><div class="shopping"> 
+				</svg><span class="quantity">0</span></div>
+			</a>
+
         </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-div">
-                <p class="hero-text">
-                    Zero Buzz Brew tilbyder alkoholfri øl med fokus på 0,0% og 0,5% alkohol, så du kan nyde en smagfuld øl uden at gå på kompromis. Vi skaber øl, der passer til en aktiv livsstil, hvor du får mere tid til det der betyder noget, samtidig med at du kan finde gode tilbud. Vores øl giver dig mulighed for at leve fuldt ud, uden alkoholen tager overhånd.
-                </p><br>	
-                <h2>Alle øl</h2>
-            </div>
-            <div class="product" style="display: grid; grid-template-columns: repeat(3,1fr);">
-                <div style="text-align: center;">
-                    <img src="/img/weissbier.avif" alt="">
-                    <h4>Name</h4>
-                    <h3>Details</h3>
-                    <button class="add-to-cart" id="1" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
-                </div>
-                <div style="text-align: center;">
-                    <img src="/img/stout.avif" alt="">
-                    <h4>Name</h4>
-                    <h3>Details</h3>
-                    <button class="add-to-cart" id="2" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
-                </div>
-                <div style="text-align: center;">
-                    <img src="/img/sour.avif" alt="">
-                    <h4>Name</h4>
-                    <h3>Details</h3>
-                    <button class="add-to-cart" id="3" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
-                </div>
-                <div style="text-align: center;">
-                    <img src="/img/lager.avif" alt="">
-                    <h4>Name</h4>
-                    <h3>Details</h3>
-                    <button class="add-to-cart" id="4" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
-                </div>
-                <div style="text-align: center;">
-                    <img src="/img/ipa.avif" alt="">
-                    <h4>Name</h4>
-                    <h3>Details</h3>
-                    <button class="add-to-cart" id="5" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
-                </div>
-                <div style="text-align: center;">
-                    <img src="/img/pilsner.avif" alt="">
-                    <h4>Name</h4>
-                    <h3>Details</h3>
-                    <button class="add-to-cart" id="6" name="scout" price="25" img="img/image002.png">Læg i Kurv</button>
-                </div>
-            </div>
-            <div class="cart">
-                <div class="listCard"></div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <aside class="footer-container">
-            <ul>
-                <li>Adresse: <a href="https://www.google.com/maps/dir/56.1119232,10.1613568/%C3%98lsvej+25,+9500+Hobro/@56.3736563,9.6365366,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4649537b7443cb2d:0xcf5d779a3f39fffd!2m2!1d9.7658873!2d56.6349277!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D">Ølsvej 25</a></li>
-                <li>CVR: 95743276</li>
-                <li>Kontakt: <a class="kontakt" href="tel:(+45)(60708090)">+45 60708090</a></li>
-                <li>Mail: <a class="kontakt" href="mailto:FAKE@zbb.com">zbb@gmail.com</a></li>
-            </ul>
-        </aside>
-        <aside class="footer-container">
-            <img id="footer-logo" src="../img/hjemmesidelogo-2.svg" alt="Logo">
-        </aside>
-        <aside class="footer-container-medier">
-            <ul class="medier">
-                <li><a href="https://WWW.facebook.com/"><img src="../img/facebook.svg" alt=""></a></li>
-                <li><a href="https://WWW.instagram.com/"><img src="../img/instagram.svg" alt=""></a></li>
-            </ul>
-            <ul class="medier">
-                <li><a href="https://WWW.linkedin.com/"><img src="../img/linked-in.svg" alt=""></a></li>
-                <li><a href="https://WWW.tiktok.com"><img src="../img/tiktok.svg" alt=""></a></li>
-            </ul>
-        </aside>
-    </footer>
-    <script src="/js/script2.js"></script>
+        <!-- section hero -->
+				<section class="hero">
+					<div class="hero-div">
+					<img  class="hero-img"   src="/img/people-drinking-craft-beer.jpg "alt="hero-img">
+					<p class="hero-text">
+						Zero Buzz Brew tilbyder alkoholfri øl med fokus på 0,0% og 0,5% alkohol, så du kan nyde en smagfuld øl uden at gå på kompromis. Vi skaber øl, der passer til en aktiv livsstil, hvor du får mere tid til det der betyder noget, samtidig med at du kan finde gode tilbud. Vores øl giver dig mulighed for at leve fuldt ud, uden alkoholen tager overhånd.
+					</p><br>	
+					<h2>Alle øl</h2>
+				</div>  
+	
+	
+<!-- All product -->
+		<div class=" product" style="display: grid; grid-template-columns: repeat(3,1fr); ">
+			<div class="product-div">				
+				<img src="/img/weissbier.avif" alt="">		
+				<h3>BrewBalance 24x 950kr</h3><br>
+				<item class="add-to-cart" id="1" name="weissbier" price="25" img="/img/weissbier.avif" alt=""	><button>Læg i Kurv</button> </item>
+			</div>
+
+			<div class="product-div">
+				<img src="/img/stout.avif" alt="">				
+				<h3>ClearBrew 24x 1000 kr</h3><br>
+				<item class="add-to-cart" id="2" name="Stout" price="25" img="/img/stout.avif"><button>Læg i Kurv</button> </item>
+			</div>
+
+			<div class="product-div">
+				<img src="/img/sour.avif" alt="">				
+				<h3>FrostBrew 24x 1100 kr</h3><br>
+				<item class="add-to-cart" id="3" name="Sour" price="25" img="/img/sour.avif"><button>Læg i Kurv</button> </item>
+			</div>
+
+			<div class="product-div">
+				<img src="/img/lager.avif" alt="">				
+				<h3>BrewEase 24x 1050 kr</h3><br>
+				<item class="add-to-cart" id="4" name="Lager" price="25" img="/img/lager.avif"><button>Læg i Kurv</button> </item>
+			</div>
+
+			<div class="product-div">
+				<img src="/img/ipa.avif" alt="">				
+				<h3>BrewSpark 24x 980 kr</h3><br>
+				<item class="add-to-cart" id="5" name="Ipa" price="25" img="/img/ipa.avif"><button>Læg i Kurv</button> </item>
+			</div>
+
+			<div class="product-div">
+				<img src="/img/pilsner.avif" alt="">				
+				<h3>Lightbrew 24x 1080 kr</h3><br>
+				<item class="add-to-cart" id="6" name="pilsner" price="25" img src="/img/pilsner.avif"><button>Læg i Kurv</button> </item>
+			</div>
+		</div>
+
+	<!-- 	<button class="btn-style">Se abonnomenter</button> -->
+	 <div class="cart">            
+			 
+				<!-- which is the cart container in the UI) -->
+				<!-- <div class="total">Total:0</div> -->
+			</div>
+			</section>
+<!-- footer -->
+<footer>
+	<aside class="footer-container">
+	<ul>
+		<li> Adresse: <a href="https://www.google.com/maps/dir/56.1119232,10.1613568/%C3%98lsvej+25,+9500+Hobro/@56.3736563,9.6365366,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4649537b7443cb2d:0xcf5d779a3f39fffd!2m2!1d9.7658873!2d56.6349277!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D">Ølsvej 25</a></li>
+		<li> CVR: 95743276</li>
+		<li> Kontakt: <a class="kontakt" href="tel:(+45)(60708090)">+45 60708090</a></li>
+		<li> Mail: <a class="kontakt" href="mailto:FAKE@zbb.com">zbb@gmail.com</a></li>
+	</ul>
+	</aside>
+
+	<aside class="footer-container">
+	<img id="footer-logo" src="../img/hjemmesidelogo-2.svg" alt="Logo">
+	</aside>
+
+	<aside class="footer-container-medier">
+		<ul class="medier">
+			<li> <a href="https://WWW.facebook.com/"><img src="../img/facebook.svg" alt=""></a></li>
+			<li> <a href="https://WWW.instagram.com/"><img src="../img/instagram.svg" alt=""></a></li>
+		</ul>
+		<ul class="medier">
+			<li> <a href="https://WWW.linkedin.com/"><img src="../img/linked-in.svg" alt=""></a></li>
+			<li> <a href="https://WWW.tiktok.com"><img src="../img/tiktok.svg" alt=""></a></li>
+		</ul>
+	</aside>
+</footer>
+<script>
+		
+	document.addEventListener("DOMContentLoaded", function () {
+			// Get product ID from URL
+			const params = new URLSearchParams(window.location.search);
+			const productId = params.get("id");
+
+			// Get cart from localStorage
+			let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+			// Find the clicked product
+			let product = cart.find(item => item.id === productId);
+
+			if (product) {
+					document.getElementById("product-details").innerHTML = `
+							<h1>${product.name}</h1>
+							<img src="${product.img}" alt="${product.name}" width="200">
+							<p>Price: ${product.price.toFixed(2)} DKK</p>
+							<button onclick="window.history.back()">Back to Cart</button>
+					`;
+			} else {
+					document.getElementById("product-details").innerHTML = "<p>Product not found!</p>";
+			}
+	});
+
+</script>
+<script src="/js/script2.js"></script>
+
 </body>
-</html>
+</html>	

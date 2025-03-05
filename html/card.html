@@ -41,27 +41,34 @@
                 </li>
             </ul>
 			<a id="kurv" href="/html/card.html">
-				<img class="kurv" src="/img/shopping-card.svg" alt="Billede af indkøbskurv">
+				<img class="kurv" src="/img/shopping-card.svg" alt="Billede af indkøbskurv"><span class="quantity">0</span>			
+			</div>
 			</a>
         </nav>
         <!-- javascript, skal ligge nederst -->
-    </header>
-	<main>
-		<section class="Kurv">
+   
+	
+		<!-- <section class="Kurv"> -->
 			
-			<h3>Fortsæt Shopping</h3>
-        <div class="cart">
-            <h3>Your Cart</h3> 
-            <div class="listCard"></div> <!-- which is the cart container in the UI) -->
-						<h4>Total Price: <span class="total-price">0</span> DKK</h4>
-				</section> 	
+			<div class="cart">          
+        <div class="listCard"></div> <!-- which is the cart container in the UI) -->
+				<h3 style="margin-left: 25rem;">Følgeseddel</h3>
+				<div class="fullPage">	        			
+							<h4>Total Price: <span class="total-price">Dkk</span></h4>
+       </div>	
+			 
+				<button class="cart-heading"onclick="location.href='/html/shop.html'">Fortsæt Shopping</button>
+         <button class="cart-heading" onclick="location.href='/html/abonnement.html'">Go til Kasser</button>        
+			
+        </section> 
+				 	
 					
     <!-- footer -->
 
 		<script src="/js/card.js"></script>
 		<script src="/js/script2.js"></script> 
   <!--  <script src="script.js"></script>  -->
-	</main>
+	
 	<footer>
 		<aside class="footer-container">
 		<ul>
@@ -72,9 +79,7 @@
 		</ul>
 		</aside>
 
-		<aside class="footer-container">
-			<img id="footer-logo" src="../img/hjemmesidelogo-2.svg" alt="Logo">
-		</aside>
+		
 
 		<aside class="footer-container-medier">
 			<ul class="medier">
@@ -87,7 +92,9 @@
 			</ul>
 		</aside>
 	</footer>
-		<script src="js/script.js"></script>
+	
+		<!-- <script src="js/script.js"></script> -->
 		<script src="/js/card.js"></script>
+		<script src="/js/script2.js"></script>
 </body>
 </html>
