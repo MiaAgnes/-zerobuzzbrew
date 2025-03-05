@@ -4,6 +4,18 @@
       box-sizing: border-box;
 }
 
+.img-hero-container{
+      display: flex;
+      justify-content: center;
+}
+
+.img-tilbud{
+      height: 35vw;
+      width: 50vw;
+      border: 3px solid #2c3583;
+      margin-top: 3rem;
+}
+
 .hero-tekst{
       font-size: 2rem;
       font-weight: normal;
@@ -37,11 +49,11 @@
   
   /* Ensartede rammer */
   .weissbier { border-color: #FFD700; } /* Gul */
-  .stout { border-color: #FFA500; } /* Orange */
-  .sour { border-color: #FF7F7F; } /* Rød */
-  .lager { border-color: #9370DB; } /* Lilla */
-  .ipa { border-color: #4682B4; } /* Blå */
-  .pilsner { border-color: #32CD32; } /* Grøn */
+  .stout { border-color: #F4c790; } /* Orange */
+  .sour { border-color: #Fac0c0; } /* Rød */
+  .lager { border-color: #ccacd2; } /* Lilla */
+  .ipa { border-color: #8ac9da; } /* Blå */
+  .pilsner { border-color: #a6d6ae; } /* Grøn */
   
   /* Styling af billeder */
   .shop-img {
@@ -100,47 +112,47 @@
   }
   
   .stout .add-to-cart { 
-      border-color: #FFA500; 
-      color: #FFA500; 
+      border-color: #F4c790; 
+      color: #F4c790; 
   }
   .stout .add-to-cart:hover { 
-      background-color: #FFA500; 
+      background-color: #F4c790; 
       color: white; 
   }
   
   .sour .add-to-cart { 
-      border-color: #FF7F7F; 
-      color: #FF7F7F; 
+      border-color: #Fac0c0; 
+      color: #Fac0c0; 
   }
   .sour .add-to-cart:hover { 
-      background-color: #FF7F7F; 
+      background-color: #Fac0c0; 
       color: white; 
   }
   
   .lager .add-to-cart { 
-      border-color: #9370DB; 
-      color: #9370DB; 
+      border-color: #ccacd2; 
+      color: #ccacd2; 
   }
   .lager .add-to-cart:hover { 
-      background-color: #9370DB; 
+      background-color: #ccacd2; 
       color: white; 
   }
   
   .ipa .add-to-cart { 
-      border-color: #4682B4; 
-      color: #4682B4; 
+      border-color: #8ac9da; 
+      color: #8ac9da; 
   }
   .ipa .add-to-cart:hover { 
-      background-color: #4682B4; 
+      background-color: #8ac9da; 
       color: white; 
   }
   
   .pilsner .add-to-cart { 
-      border-color: #32CD32; 
-      color: #32CD32; 
+      border-color: #a6d6ae; 
+      color: #a6d6ae; 
   }
   .pilsner .add-to-cart:hover { 
-      background-color: #32CD32; 
+      background-color: #a6d6ae; 
       color: white; 
   }
 
