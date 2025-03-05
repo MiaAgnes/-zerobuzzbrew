@@ -61,31 +61,41 @@
                     <th>Pris</th>
                 </tr>
                 <tr>
-                    <tb>IPA</tb>
-                    <tb>4 flasker</tb>
-                    <tb>4</tb>
-                    <tb>400kr</tb>
+                    <td>IPA</td>
+                    <td>4 flasker</td>
+                    <td>4</td>
+                    <td>400kr</td>
                 </tr>
                 <tr>
-                    <tb>3 og each- pack</tb>
-                    <tb>Abonnoment</tb>
-                    <tb>1</tb>
-                    <tb>750kr</tb>
+                    <td>3 og each- pack</td>
+                    <td>Abonnoment</td>
+                    <td>1</td>
+                    <td>750kr</td>
                 </tr>
             </table>
-
+            <hr>
+            <section class="total-moms">
+                <p>Total inklusiv moms</p>
+                <p>1150kr</p>
+            </section>
         </section>
-        
 
 
 
 <!-- oplysnings felter -->
-        <section class="kommentarfelt-boks"> <form action="/submit-kommentar" method="POST"></form>
+        <section class="dine-oplysninger">
+            <section class="email-boks"> <form action="/submit-kommentar" method="POST"></form>
             <textarea id="kommentar" name="kommentar" placeholder="Skriv din kommentar her"
-                rows="11" cols="50">
-            </textarea>
-            <button class="kommentar-knap">SEND</button>
-   </section>
+                rows="2" cols="50">
+             </textarea>
+            </section>
+            <section class="gem-chek">
+                <article class="Gem-knap">Gem oplysnings til senere</article>
+                <input type="checkbox" name="gem" id="gem-chekbox">
+            </section>
+           
+
+        </section>
 	</main>
 
 	<footer>
