@@ -4,6 +4,15 @@
       box-sizing: border-box;
 }
 
+.hero-tekst{
+      font-size: 2rem;
+      font-weight: normal;
+      margin-left: 20vw;
+	margin-right: 20vw;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+}
+
 /* Container til produkterne */
 .product-container {
       display: grid;
@@ -11,7 +20,7 @@
       gap: 20px; /* Afstand mellem produkterne */
       justify-items: center;
       max-width: 900px;
-      margin: 0 auto;
+      margin: 2rem auto;
   }
   
   /* Styling af produktkort */
@@ -24,10 +33,6 @@
       background-color: white;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease-in-out;
-  }
-  
-  .produkt-card:hover {
-      transform: scale(1.05);
   }
   
   /* Ensartede rammer */
@@ -45,24 +50,44 @@
       max-height: 180px;
       object-fit: contain;
   }
+
+  h2{
+      font-size: 3rem;
+      font-weight: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  h3{
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      font-weight: normal;
+  }
   
   /* Styling af produktnavn */
   h4 {
-      font-size: 1.2em;
-      font-weight: bold;
-      margin-top: 10px;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      font-weight: normal;
   }
   
   /* Styling af knap-container */
   .add-to-cart {
       display: inline-block;
       padding: 8px 15px;
-      font-size: 1em;
-      font-weight: bold;
+      font-size: 1rem;
       border: 2px solid transparent;
       border-radius: 20px;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
+      margin-top: 1rem;
+      height: 40px;
+      width: 130px;
+  }
+
+  .add-to-cart-tekst{
+      font-size: 1.25rem;
   }
   
   .weissbier .add-to-cart { 
@@ -119,4 +144,7 @@
       color: white; 
   }
 
+  .produkt-card:hover {
+      transform: scale(1.05);
+  }
 
