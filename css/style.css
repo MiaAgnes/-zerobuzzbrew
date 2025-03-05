@@ -183,9 +183,14 @@ a:visited {
    margin: 0.5rem;
 }
 
-
-.quantity{
+.quantity {
 	margin-left: -7.5vw;
 	margin-top: -2.5vh;
 	font-size: 2vw;
+	text-decoration: none !important; /* Ensure no underline */
+	color: inherit; /* Ensure it inherits the color */
+}
+
+span{
+	text-decoration: none;
 }
