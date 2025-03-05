@@ -10,7 +10,7 @@
 	display: flex;
 	justify-content: center;
     height: auto;
-	width: 60%;
+	width: 50%;
     border: #2c3583 3px solid;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .abn-tekst p{
-	font-size: 3vh;
+	font-size: 2rem;
 	text-align: center;
 }
 
@@ -52,14 +52,14 @@
 }
 
 .produkt-card img{
-    width: 100px;
+    width: 95px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 .produkt{
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin: 10px 0;
 }
 
@@ -107,19 +107,9 @@
     margin: 0 auto;
 }
 
-.add-to-cart2{
-    background: white;
-    color: #2c3583;
-    padding: 0.2rem 0.3rem;
-    border: 1px solid #2c3583;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: -30rem;
-}
-
 
 .abn-produkt-tekst{
-    font-size: 0.5rem;
+    font-size: 0.8rem;
 }
 
 
