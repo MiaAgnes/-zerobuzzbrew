@@ -1,4 +1,122 @@
-.product-container img {
-      height: auto;
-      width: 10rem;
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
 }
+
+/* Container til produkterne */
+.product-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+      gap: 20px; /* Afstand mellem produkterne */
+      justify-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+  }
+  
+  /* Styling af produktkort */
+  .produkt-card {
+      width: 250px;
+      padding: 20px;
+      border: 3px solid transparent;
+      border-radius: 10px;
+      text-align: center;
+      background-color: white;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
+  }
+  
+  .produkt-card:hover {
+      transform: scale(1.05);
+  }
+  
+  /* Ensartede rammer */
+  .weissbier { border-color: #FFD700; } /* Gul */
+  .stout { border-color: #FFA500; } /* Orange */
+  .sour { border-color: #FF7F7F; } /* Rød */
+  .lager { border-color: #9370DB; } /* Lilla */
+  .ipa { border-color: #4682B4; } /* Blå */
+  .pilsner { border-color: #32CD32; } /* Grøn */
+  
+  /* Styling af billeder */
+  .shop-img {
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+      object-fit: contain;
+  }
+  
+  /* Styling af produktnavn */
+  h4 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: 10px;
+  }
+  
+  /* Styling af knap-container */
+  .add-to-cart {
+      display: inline-block;
+      padding: 8px 15px;
+      font-size: 1em;
+      font-weight: bold;
+      border: 2px solid transparent;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+  }
+  
+  /* Farvede knapper */
+  .weissbier .add-to-cart { 
+      border-color: #FFD700; 
+      color: #FFD700; 
+  }
+  .weissbier .add-to-cart:hover { 
+      background-color: #FFD700; 
+      color: white; 
+  }
+  
+  .stout .add-to-cart { 
+      border-color: #FFA500; 
+      color: #FFA500; 
+  }
+  .stout .add-to-cart:hover { 
+      background-color: #FFA500; 
+      color: white; 
+  }
+  
+  .sour .add-to-cart { 
+      border-color: #FF7F7F; 
+      color: #FF7F7F; 
+  }
+  .sour .add-to-cart:hover { 
+      background-color: #FF7F7F; 
+      color: white; 
+  }
+  
+  .lager .add-to-cart { 
+      border-color: #9370DB; 
+      color: #9370DB; 
+  }
+  .lager .add-to-cart:hover { 
+      background-color: #9370DB; 
+      color: white; 
+  }
+  
+  .ipa .add-to-cart { 
+      border-color: #4682B4; 
+      color: #4682B4; 
+  }
+  .ipa .add-to-cart:hover { 
+      background-color: #4682B4; 
+      color: white; 
+  }
+  
+  .pilsner .add-to-cart { 
+      border-color: #32CD32; 
+      color: #32CD32; 
+  }
+  .pilsner .add-to-cart:hover { 
+      background-color: #32CD32; 
+      color: white; 
+  }
+  

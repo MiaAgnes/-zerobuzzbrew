@@ -44,15 +44,15 @@
     border: 3px solid #2c3583; /* Blue border */
     padding: 20px;
     border-radius: 10px;
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     margin-left: 1rem;
     margin-right: 5rem;
 }
 
 .produkt-card img{
-    width: 95px;
+    width: 165px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -93,15 +93,15 @@
     border: 3px solid #2c3583; /* Blue border */
     padding: 20px;
     border-radius: 10px;
-    width: 220px;
-    height: 220px;
+    width: 300px;
+    height: 300px;
     text-align: center;
     margin-left: 1rem;
     margin-right: 5rem;
 }
 
 .produkt-card2 img{
-    width: 130px;
+    width: 225px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -109,7 +109,15 @@
 
 
 .abn-produkt-tekst{
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+
+.produkt-card:hover {
+    transform: scale(1.05);
+}
+
+.produkt-card2:hover {
+    transform: scale(1.05);
 }
 
 
