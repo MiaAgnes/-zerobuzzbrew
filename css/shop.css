@@ -1,189 +1,270 @@
-*{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-}
-
-.img-hero-container{
-      display: flex;
-      justify-content: center;
-}
-
-.img-tilbud{
-      height: 35vw;
-      width: 50vw;
-      border: 3px solid #2c3583;
-      margin-top: 3rem;
-}
-
-.hero-tekst{
-      font-size: 2rem;
-      font-weight: normal;
-      margin-left: 20vw;
-	margin-right: 20vw;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-}
-
-/* Container til produkterne */
-.product-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
-      gap: 20px; /* Afstand mellem produkterne */
-      justify-items: center;
-      max-width: 900px;
-      margin: 2rem auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .img-hero-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-tilbud {
+    height: 35vw;
+    width: 50vw;
+    border: 3px solid #2c3583;
+    margin-top: 3rem;
+  }
+  
+  .hero-tekst {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* Container til produkterne */
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner */
+    gap: 20px; /* Afstand mellem produkterne */
+    justify-items: center;
+    max-width: 900px;
+    margin: 2rem auto;
   }
   
   /* Styling af produktkort */
   .produkt-card {
-      width: 250px;
-      padding: 20px;
-      border: 3px solid transparent;
-      border-radius: 10px;
-      text-align: center;
-      background-color: white;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease-in-out;
+    position: relative; /* Add this to position the pseudo-element */
+    width: 250px;
+    padding: 20px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .produkt-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .produkt-card::after {
+    content: "Læs mere";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2; /* Ensure the text is above the overlay */
+  }
+  
+  .produkt-card:hover::after {
+    opacity: 1;
+  }
+  
+  .produkt-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1; /* Ensure the overlay is below the text */
+  }
+  
+  .weissbier:hover::before {
+    background-color: rgba(255, 215, 0, 0.7); /* 10% opacity of the border color */
+  }
+  
+  .stout:hover::before {
+    background-color: rgba(244, 199, 144, 0.7); /* 10% opacity of the border color */
+  }
+  
+  .sour:hover::before {
+    background-color: rgba(250, 192, 192, 0.7); /* 10% opacity of the border color */
+  }
+  
+  .lager:hover::before {
+    background-color: rgba(204, 172, 210, 0.7); /* 10% opacity of the border color */
+  }
+  
+  .ipa:hover::before {
+    background-color: rgba(138, 201, 218, 0.7); /* 10% opacity of the border color */
+  }
+  
+  .pilsner:hover::before {
+    background-color: rgba(166, 214, 174, 0.7); /* 10% opacity of the border color */
   }
   
   /* Ensartede rammer */
-  .weissbier { border-color: #FFD700; } /* Gul */
-  .stout { border-color: #F4c790; } /* Orange */
-  .sour { border-color: #Fac0c0; } /* Rød */
-  .lager { border-color: #ccacd2; } /* Lilla */
-  .ipa { border-color: #8ac9da; } /* Blå */
-  .pilsner { border-color: #a6d6ae; } /* Grøn */
+  .weissbier {
+    border-color: #ffd700;
+  }
+  
+  .stout {
+    border-color: #f4c790;
+  }
+  
+  .sour {
+    border-color: #fac0c0;
+  }
+  
+  .lager {
+    border-color: #ccacd2;
+  }
+  
+  .ipa {
+    border-color: #8ac9da;
+  }
+  
+  .pilsner {
+    border-color: #a6d6ae;
+  }
   
   /* Styling af billeder */
   .shop-img {
-      width: 100%;
-      height: auto;
-      max-height: 180px;
-      object-fit: contain;
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    object-fit: contain;
   }
-
-  h2{
-      font-size: 3rem;
-      font-weight: normal;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-
-  h3{
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      font-weight: normal;
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: normal;
   }
   
   /* Styling af produktnavn */
   h4 {
-      font-size: 1.5rem;
-      margin-top: 1rem;
-      font-weight: normal;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: normal;
   }
   
   /* Styling af knap-container */
   .add-to-cart {
-      display: inline-block;
-      padding: 8px 15px;
-      font-size: 1rem;
-      border: 2px solid transparent;
-      border-radius: 20px;
-      cursor: pointer;
-      transition: all 0.3s ease-in-out;
-      margin-top: 1rem;
-      height: 40px;
-      width: 130px;
-  }
-
-  .add-to-cart-tekst{
-      font-size: 1.25rem;
-  }
-  
-  .weissbier .add-to-cart { 
-      border-color: #FFD700; 
-      color: #FFD700; 
-  }
-  .weissbier .add-to-cart:hover { 
-      background-color: #FFD700; 
-      color: white; 
+    display: inline-block;
+    background-color: white;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 1rem;
+    height: 40px;
+    width: 130px;
+    position: relative;
+    z-index: 3; /* Ensure the button is above the overlay */
   }
   
-  .stout .add-to-cart { 
-      border-color: #F4c790; 
-      color: #F4c790; 
-  }
-  .stout .add-to-cart:hover { 
-      background-color: #F4c790; 
-      color: white; 
+  .add-to-cart-tekst {
+    font-size: 1.25rem;
   }
   
-  .sour .add-to-cart { 
-      border-color: #Fac0c0; 
-      color: #Fac0c0; 
-  }
-  .sour .add-to-cart:hover { 
-      background-color: #Fac0c0; 
-      color: white; 
+  .weissbier .add-to-cart {
+    border-color: #ffd700;
+    color: #ffd700;
   }
   
-  .lager .add-to-cart { 
-      border-color: #ccacd2; 
-      color: #ccacd2; 
-  }
-  .lager .add-to-cart:hover { 
-      background-color: #ccacd2; 
-      color: white; 
+  .weissbier .add-to-cart:hover {
+    background-color: #ffd700;
+    color: white;
   }
   
-  .ipa .add-to-cart { 
-      border-color: #8ac9da; 
-      color: #8ac9da; 
-  }
-  .ipa .add-to-cart:hover { 
-      background-color: #8ac9da; 
-      color: white; 
+  .stout .add-to-cart {
+    border-color: #f4c790;
+    color: #f4c790;
   }
   
-  .pilsner .add-to-cart { 
-      border-color: #a6d6ae; 
-      color: #a6d6ae; 
+  .stout .add-to-cart:hover {
+    background-color: #f4c790;
+    color: white;
   }
-  .pilsner .add-to-cart:hover { 
-      background-color: #a6d6ae; 
-      color: white; 
+  
+  .sour .add-to-cart {
+    border-color: #fac0c0;
+    color: #fac0c0;
   }
-
-  .produkt-card:hover {
-      transform: scale(1.05);
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  
+  .sour .add-to-cart:hover {
+    background-color: #fac0c0;
+    color: white;
   }
-
-  .knap{
-      margin-bottom: 4rem;
-      margin-top: 2rem;
+  
+  .lager .add-to-cart {
+    border-color: #ccacd2;
+    color: #ccacd2;
   }
-
-  .abn-knap{
-      background: white;
-      color: #2c3583;
-      padding: 0.2rem 0.3rem;
-      border: 2px solid #2c3583;
-      border-radius: 5px;
-      cursor: pointer;
+  
+  .lager .add-to-cart:hover {
+    background-color: #ccacd2;
+    color: white;
   }
-
-  .abn-knap-tekst{
-      font-size: 2rem;
-      font-weight: normal;
+  
+  .ipa .add-to-cart {
+    border-color: #8ac9da;
+    color: #8ac9da;
   }
-
-  .abn-knap:hover{
-      background-color: #2c3583;
+  
+  .ipa .add-to-cart:hover {
+    background-color: #8ac9da;
+    color: white;
   }
-
-  .abn-knap-tekst:hover{
-      color: #8ac9da;
+  
+  .pilsner .add-to-cart {
+    border-color: #a6d6ae;
+    color: #a6d6ae;
+  }
+  
+  .pilsner .add-to-cart:hover {
+    background-color: #a6d6ae;
+    color: white;
+  }
+  
+  .knap {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+  
+  .abn-knap {
+    background: white;
+    color: #2c3583;
+    padding: 0.2rem 0.3rem;
+    border: 2px solid #2c3583;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .abn-knap-tekst {
+    font-size: 2rem;
+    font-weight: normal;
+  }
+  
+  .abn-knap:hover {
+    background-color: #2c3583;
+  }
+  
+  .abn-knap-tekst:hover {
+    color: #8ac9da;
   }
