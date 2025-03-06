@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCartCount();
   }
 
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   document.querySelectorAll(".add-to-cart").forEach((button) => {
     button.addEventListener("click", function () {
       let productId = this.getAttribute("id");
@@ -32,17 +36,27 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       addToCart(product);
+
+      scrollToTop();
+
     });
   });
 
   updateCartCount();
 });
 
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
   let cart = JSON.parse(localStorage.getItem('cart')) || [];
   const listCard = document.querySelector('.listCard');
   const totalPriceSpan = document.querySelector('.total-price');
   let totalPrice = 0;
+
+  function updateCartCount() {
+    document.querySelector(".quantity").textContent = cart.reduce((total, item) => total + item.quantity, 0);
+  }
 
   function updateCart() {
     listCard.innerHTML = '';
@@ -60,19 +74,17 @@ document.addEventListener('DOMContentLoaded', function() {
       listCard.appendChild(itemElement);
       totalPrice += item.price * item.quantity;
 
-      // Append item name and price to totalPriceSpan
-      const itemInfo = document.createElement('div');
-      itemInfo.textContent = `${item.name} - ${item.price} DKK x ${item.quantity}`;
-      totalPriceSpan.appendChild(itemInfo);
+      updateCartCount();
     });
 
     // Append total price to totalPriceSpan
     const totalPriceInfo = document.createElement('div');
-    totalPriceInfo.textContent = `Total: ${totalPrice} DKK`;
+    totalPriceInfo.textContent = `${totalPrice} DKK`;
     totalPriceSpan.appendChild(totalPriceInfo);
 
     // Store total price in localStorage
     localStorage.setItem('totalPrice', totalPrice);
+
   }
 
   listCard.addEventListener('click', function(event) {
