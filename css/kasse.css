@@ -66,3 +66,34 @@
     accent-color: #2c3583; 
     margin-left: 20px; 
 }
+
+/* Styling af leveringsmuligheder */
+.levering {
+    margin-top: 30px; /* Tilføjer lidt afstand til toppen */
+}
+
+.levering-muglighed{
+    height: 20px; 
+}
+
+.levering-options {
+    display: flex;
+    justify-content: space-between; /* Placerer sektionerne ved siden af hinanden */
+    gap: 30px; /* Tilføjer mellemrum mellem sektionerne */
+}
+
+.hejm-chek, .afhentning-chek {
+    border: 2px solid #2c3583; /* Indrammer sektionerne med farven #2c3583 */
+    padding: 10px; /* Tilføjer indvendig polstring */
+    display: flex;
+    align-items: center; /* Centrerer indholdet lodret */
+    position: relative; /* Gør det muligt at placere afkrydsningsfeltet absolut */
+}
+
+.hejm-chek input[type="checkbox"], .afhentning-chek input[type="checkbox"] {
+    width: 20px; /* Gør afkrydsningsfeltet større */
+    height: 20px; /* Gør afkrydsningsfeltet større */
+    accent-color: #2c3583; /* Ændrer farven på afkrydsningsfeltet */
+    position: relative; /* Placerer afkrydsningsfeltet relativt */
+    margin-left: 10px; /* Tilføjer lidt afstand til venstre */
+}
