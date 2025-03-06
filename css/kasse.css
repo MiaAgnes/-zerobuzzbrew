@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.but-kurv {
+    font-size: 1.5em; 
+    margin-top: 20px;
+    padding: 10px 20px; 
+    border: 2px solid #2c3583; 
+    display: inline-block; 
+}
+
+.dine-oplysninger {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Tilføjer mellemrum mellem elementerne */
+    margin-top: 20px; 
+}
+
+.dine-oplysninger label,
+.dine-oplysninger input[type="text"] {
+    width: 100%;
+}
+
+.dine-oplysninger .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px; /* Tilføjer mellemrum mellem label og input */
+}
+
+.dine-oplysninger input[type="text"] {
+    flex: 900px; /* Gør input-felterne længere */
+    padding: 30px; /* Tilføjer indvendig polstring for at gøre input-felterne større */
+    border: 2px solid #2c3583;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
