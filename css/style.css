@@ -118,6 +118,7 @@ main p{
 	background-color: white;
 	border: 3px, solid, #2c3583;
 	cursor: pointer;
+	border-radius: 10px;
 }
 
 .forside-knap-tekst:hover{
