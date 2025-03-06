@@ -69,7 +69,8 @@
 
 /* Styling af leveringsmuligheder */
 .levering {
-    margin-top: 30px; /* Tilføjer lidt afstand til toppen */
+    margin-top: 30px; 
+    
 }
 
 .levering-muglighed{
@@ -78,22 +79,58 @@
 
 .levering-options {
     display: flex;
-    justify-content: space-between; /* Placerer sektionerne ved siden af hinanden */
-    gap: 30px; /* Tilføjer mellemrum mellem sektionerne */
+    justify-content: space-between; 
+    gap: 30px; 
 }
 
 .hejm-chek, .afhentning-chek {
-    border: 2px solid #2c3583; /* Indrammer sektionerne med farven #2c3583 */
-    padding: 10px; /* Tilføjer indvendig polstring */
+    border: 2px solid #2c3583; 
+    padding: 10px; 
     display: flex;
-    align-items: center; /* Centrerer indholdet lodret */
-    position: relative; /* Gør det muligt at placere afkrydsningsfeltet absolut */
+    align-items: center; 
+    position: relative; 
 }
 
 .hejm-chek input[type="checkbox"], .afhentning-chek input[type="checkbox"] {
-    width: 20px; /* Gør afkrydsningsfeltet større */
-    height: 20px; /* Gør afkrydsningsfeltet større */
-    accent-color: #2c3583; /* Ændrer farven på afkrydsningsfeltet */
-    position: relative; /* Placerer afkrydsningsfeltet relativt */
-    margin-left: 10px; /* Tilføjer lidt afstand til venstre */
+    width: 20px; 
+    height: 20px; 
+    accent-color: #2c3583; 
+    position: relative; 
+    margin-left: 10px; 
+}
+
+/* Styling af leveringssektion for hjemmevevering*/
+#dao1-section, #dao2-section, #gls-section, #post-section {
+    display: flex;
+    align-items: center;
+    border: 2px solid #2c3583; 
+    padding: 10px; 
+    margin-top: 50px; 
+    position: relative; 
+}
+
+#dao1-section img, #dao2-section img, #gls-section img, #post-section img {
+    width: 150px; 
+    position: absolute; 
+    left: -170px; 
+}
+
+#dao1-section article, #dao2-section article, #gls-section article, #post-section article {
+    flex-grow: 100px; 
+}
+
+/* Styling af leveringssektion for afhentning */
+#dao1-hent-section, #dao2-hent-section, #gls-hent-section, #post-hent-section {
+    display: flex;
+    align-items: center;
+    border: 2px solid #2c3583; 
+    padding: 10px; 
+    margin-top: 50px; 
+    position: relative; 
+}
+
+#dao1-hent-section img, #dao2-hent-section img, #gls-hent-section img, #post-hent-section img {
+    width: 150px; 
+    position: absolute; 
+    left: -170px; 
 }
