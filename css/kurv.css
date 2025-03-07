@@ -42,7 +42,7 @@ h4{
 	font-weight: normal;
 }
 
-button{
+.button{
 	background: white;
     color: #2c3583;
     padding: 0.2rem 0.3rem;
@@ -59,7 +59,7 @@ button{
 	font-size: 1.15rem;
 }
 
-button:hover{
+.button:hover{
 	background-color: #2c3583;
 }
 
