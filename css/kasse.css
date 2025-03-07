@@ -143,7 +143,7 @@ main{
 }
 
 #dao1-section article, #dao2-section article, #gls-section article, #post-section article {
-    flex-grow: 100px; 
+    width: 100px; 
 }
 
 /* Styling af leveringssektion for afhentning */
