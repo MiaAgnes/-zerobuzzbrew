@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".add-to-cart").forEach((button) => {
     button.addEventListener("click", function () {
       let productId = this.getAttribute("id");
-      let productName = this.getAttribute("name");
-      let productPrice = this.getAttribute("price");
+      let productName = this.getAttribute("data-name");
+      let productPrice = this.getAttribute("data-price");
       let productImg = this.getAttribute("img");
 
       let product = {
