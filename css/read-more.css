@@ -15,6 +15,13 @@ main{
    height: 40vw;
 }
 
+.pil{
+   height: 3vh;
+   width: auto;
+   border: none;
+   margin-left: 3vh;
+}
+
 aside div img {
    height: 40vw;
    width: auto;
@@ -66,6 +73,15 @@ aside button {
    background-color: #8ac9da;
    border: none;
    cursor: pointer;
+}
+
+.add-to-cart{
+    background: white;
+    color: #2c3583;
+    padding: 0.2rem 0.3rem;
+    border: 2px solid #2c3583;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button.active {
