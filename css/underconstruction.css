@@ -5,16 +5,19 @@
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 2vw;
     font-weight: normal;
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .under-construction-img{
-    height: 40vw;
-    width: 80vw;
-    margin-bottom: 2rem;
+	margin-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+    height: auto;
+	width: 55%;
+    border: #2c3583 3px solid;
 }
 
 main {

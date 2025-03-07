@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+main{
+	font-family: adelle sans devanagari;
+}
+
 .abn-hero-img{
 	margin-top: 3rem;
 	margin-bottom: 2rem;
@@ -14,21 +18,15 @@
     border: #2c3583 3px solid;
 }
 
-.abn-tekst{
-	margin-left: 20vw;
-	margin-right: 20vw;
-}
 
 .abn-tekst p{
-	font-size: 2rem;
-	text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
 
 .abn-h1{
-    font-size: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    font-weight: normal;
+    font-size: 5vh;
+    margin-top: 4vh;
 }
 
 .produkt-container{

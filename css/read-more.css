@@ -112,9 +112,9 @@ button.active {
 }
 
 .more p {
-   font-size: 2vw;
-   display: flex;
-   margin-top: -2vh;
+   font-size: 1.5vw;
+   line-height: 1.5;
+   text-align: start;
 }
 
 section img {
@@ -130,11 +130,13 @@ section img {
    margin-top: 10vh;
 }
 
-.more button{
-   color: #2c3583;
-   background-color: white;
-   border: 2px solid #2c3583;
+section button{
    padding: 0.5vh 3vw;
+   margin-right: 2vw;
    flex-direction: row;
+   color: #2c3583;
+   background-color: #8ac9da;
+   border: none;
    cursor: pointer;
+   margin-bottom: 20vh;
 }
