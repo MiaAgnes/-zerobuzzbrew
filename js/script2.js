@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       let productId = this.getAttribute("id");
       let productName = this.getAttribute("name");
-      let productPrice = this.getAttribute("price");
-      let productImg = this.getAttribute("img");
+      let productPrice = this.getAttribute("data-price");
+      let productImg = this.getAttribute("data-img");
 
       let product = {
         id: productId,
