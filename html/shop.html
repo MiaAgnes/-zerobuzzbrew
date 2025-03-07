@@ -8,7 +8,165 @@
   <link rel="stylesheet" href="../css/card.css">
   <link rel="stylesheet" href="../css/shop.css">
 	<link rel="icon" type="img/svg" href="../img/fav.icon.svg">
+</head><!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero Buzz Brew</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/card.css">
+  <link rel="stylesheet" href="../css/shop.css">
 </head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li class="dropdown">
+          <a href="/html/shop.html">SHOP</a>
+          <ul class="dropdown-content">
+            <li> <a href="/html/shop.html">Vores øl</a> </li>
+            <li> <a href="/html/abonnement.html">Kasser med abonnement</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/html/oplevfabrikken.html">OPLEV FABRIKKEN</a>
+          <ul class="dropdown-content">
+            <li> <a href="">Ølsmagning og rundvisning</a></li>
+          </ul>
+        </li>
+        <a href="../index.html">
+          <img id="logo" class="logo" src="/img/hjemmesidelogo-2.svg" alt="Zero Buzz Brew logo">
+        </a>
+        <li class="dropdown">
+          <a href="/html/omos.html">OM OS</a>
+          <ul class="dropdown-content">
+            <li> <a href="">Vores historie</a></li>
+            <li> <a href="">Øllets historie</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="/html/kontakt.html">KONTAKT</a>
+        </li>
+      </ul>
+      <a id="kurv" href="/html/card.html">
+        <img class="kurv" src="/img/shopping-card.svg" alt="Billede af indkøbskurv">
+        <a href="card.html" class="cart">
+          <div class="shopping"><span class="quantity">0</span></div>
+        </a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <aside class="img-hero-container">
+        <img class="img-tilbud" src="../img/tilbud.avif" alt="">
+      </aside>
+      <aside>
+        <p class="hero-tekst">
+          Zero Buzz Brew tilbyder alkoholfri øl med fokus på 0,0% og 0,5% alkohol, så du kan nyde en smagfuld øl uden at gå på kompromis. Vi skaber øl, der passer til en aktiv livsstil, hvor du får mere tid til det der betyder noget, samtidig med at du kan finde gode tilbud. Vores øl giver dig mulighed for at leve fuldt ud, uden alkoholen tager overhånd.
+        </p>
+        <h2>Alle øl</h2>
+      </aside>
+      <section class="product-container">
+        <aside class="produkt-card weissbier" data-url="weissbier.html">
+          <a href="weissbier.html">
+            <img class="shop-img" src="../img/weissbier.avif" alt="">
+            <h4>Weissbier</h4>
+            <h3>45 kr</h3>
+          </a>
+          <button class="add-to-cart" id="1" name="Weissbier" price="45" img="../img/weissbier.avif">
+            <p class="add-to-cart-tekst">Læg i kurv</p>
+          </button>
+        </aside>
+        <aside class="produkt-card stout" data-url="stout.html">
+          <a href="stout.html">
+            <img class="shop-img" src="../img/stout.avif" alt="">
+            <h4>Stout</h4>
+            <h3>50 kr</h3>
+          </a>
+          <button class="add-to-cart" id="2" name="Stout" price="50" img="../img/stout.avif">
+            <p class="add-to-cart-tekst">Læg i kurv</p>
+          </button>
+        </aside>
+        <aside class="produkt-card sour" data-url="sour.html">
+          <a href="sour.html">
+            <img class="shop-img" src="../img/sour.avif" alt="">
+            <h4>Sour</h4>
+            <h3>50 kr</h3>
+          </a>
+          <button class="add-to-cart" id="3" name="Sour" price="50" img="../img/sour.avif">
+            <p class="add-to-cart-tekst">Læg i kurv</p>
+          </button>
+        </aside>
+        <aside class="produkt-card lager" data-url="lager.html">
+          <a href="lager.html">
+            <img class="shop-img" src="../img/lager.avif" alt="">
+            <h4>Lager</h4>
+            <h3>45 kr</h3>
+          </a>
+          <button class="add-to-cart" id="4" name="Lager" price="45" img="../img/lager.avif">
+            <p class="add-to-cart-tekst">Læg i kurv</p>
+          </button>
+        </aside>
+        <aside class="produkt-card ipa" data-url="ipa.html">
+          <a href="ipa.html">
+            <img class="shop-img" src="../img/ipa.avif" alt="">
+            <h4>IPA</h4>
+            <h3>55 kr</h3>
+          </a>
+          <button class="add-to-cart" id="5" name="IPA" price="55" img="../img/ipa.avif">
+            <p class="add-to-cart-tekst">Læg i kurv</p>
+          </button>
+        </aside>
+        <aside class="produkt-card pilsner" data-url="pilsner.html">
+          <a href="pilsner.html">
+            <img class="shop-img" src="../img/pilsner.avif" alt="">
+            <h4>Pilsner</h4>
+            <h3>45 kr</h3>
+          </a>
+          <button class="add-to-cart" id="6" name="Pilsner" price="45" img="../img/pilsner.avif">
+            <p class="add-to-cart-tekst">Læg i kurv</p>
+          </button>
+        </aside>
+      </section>
+    </section>
+    <aside class="knap">
+      <a href="abonnement.html">
+        <button class="abn-knap">
+          <p class="abn-knap-tekst">Se vores abonnement kasser her</p>
+        </button>
+      </a>
+    </aside>
+  </main>
+  <footer>
+    <aside class="footer-container">
+      <ul>
+        <li> Adresse: <a href="https://www.google.com/maps/dir/56.1119232,10.1613568/%C3%98lsvej+25,+9500+Hobro/@56.3736563,9.6365366,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4649537b7443cb2d:0xcf5d779a3f39fffd!2m2!1d9.7658873!2d56.6349277!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D">Ølsvej 25</a></li>
+        <li> CVR: 95743276</li>
+        <li> Kontakt: <a class="kontakt" href="tel:(+45)(60708090)">+45 60708090</a></li>
+        <li> Mail: <a class="kontakt" href="mailto:FAKE@zbb.com">zbb@gmail.com</a></li>
+      </ul>
+    </aside>
+
+    <aside class="footer-container">
+      <img id="footer-logo" src="../img/hjemmesidelogo-2.svg" alt="Logo">
+    </aside>
+
+    <aside class="footer-container-medier">
+      <ul class="medier">
+        <li> <a href="https://WWW.facebook.com/"><img src="../img/facebook.svg" alt=""></a></li>
+        <li> <a href="https://WWW.instagram.com/"><img src="../img/instagram.svg" alt=""></a></li>
+      </ul>
+      <ul class="medier">
+        <li> <a href="https://WWW.linkedin.com/"><img src="../img/linked-in.svg" alt=""></a></li>
+        <li> <a href="https://WWW.tiktok.com"><img src="../img/tiktok.svg" alt=""></a></li>
+      </ul>
+    </aside>
+  </footer>
+  <script src="/js/script2.js"></script>
+    <script src="/js/shop.js"></script>
+</body>
+</html>
 <body>
 	<header>
     <nav>
