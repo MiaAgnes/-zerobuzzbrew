@@ -54,7 +54,13 @@ h4{
 	margin-top: 1rem;
 	height: 2.5rem;
 	width: 10rem;
+
 }
+
+section section{
+	margin-bottom: 46.5vh;
+}
+
 
 .button-tekst{
 	font-size: 1.15rem;
