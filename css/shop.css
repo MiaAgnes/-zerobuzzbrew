@@ -266,6 +266,7 @@
   .abn-knap-tekst {
     font-size: 2rem;
     font-weight: normal;
+    padding: 0.5rem;
   }
   
   .abn-knap:hover {
