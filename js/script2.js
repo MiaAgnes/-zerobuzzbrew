@@ -20,15 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".add-to-cart").forEach((button) => {
     button.addEventListener("click", function () {
       let productId = this.getAttribute("id");
-<<<<<<< HEAD
-      let productName = this.getAttribute("data-name");
-      let productPrice = this.getAttribute("data-price");
-      let productImg = this.getAttribute("img");
-=======
       let productName = this.getAttribute("name");
       let productPrice = this.getAttribute("data-price");
       let productImg = this.getAttribute("data-img");
->>>>>>> parent of dbd5f86 (kurven virker)
 
       let product = {
         id: productId,
